@@ -1,0 +1,99 @@
+body {
+  font-family: "Montserrat";
+  margin: 0;
+}
+
+header {
+  background-color: #f9f9f9;
+  color: black;
+  padding: 3px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #ddd;
+}
+
+button {
+  border: 1px solid rgba(27, 31, 35, 0.15);
+  border-radius: 6px;
+  box-shadow: rgba(27, 31, 35, 0.1) 0 1px 0;
+  cursor: pointer;
+  padding: 6px 16px;
+}
+
+.headerWrapper {
+  padding: 10px 16px;
+}
+
+#mainContainer {
+  display: flex;
+  height: calc(100vh - 52px);
+}
+
+#sidebar {
+  border-right: 1px solid #ddd;
+  width: 20%;
+  background-color: #f4f4f4;
+}
+
+#formContainer {
+  width: 80%;
+  height: 100%;
+  overflow-y: scroll;
+}
+
+.formElement {
+  margin: 10px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  cursor: move;
+}
+
+.formElement input,
+.formElement select,
+.formElement textarea {
+  padding: 10px;
+}
+
+.elementHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 6px;
+}
+
+#saveBtn {
+  background-color: #2ea44f;
+  color: #fff;
+}
+
+.deleteButton {
+  background-color: #405cf5;
+  color: #fff;
+}
+
+#sideTitle {
+  padding: 14px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.formComponentWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 20px 10px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  background-color: #ea4c89;
+  color: #fff;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.plusIcon {
+  font-weight: 500;
+  font-size: larger;
+}

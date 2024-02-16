@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat"
+      rel="stylesheet"
+    />
+    <title>Form Designer</title>
+  </head>
+  <body>
+    <header class="headerWrapper">
+      <div id="title">Form Designer</div>
+      <button id="saveBtn" onclick="saveForm()">Save</button>
+    </header>
+
+    <div id="mainContainer">
+      <div id="sidebar">
+        <header>
+          <div id="sideTitle">Components</div>
+        </header>
+        <div onclick="addElement('Input')" class="formComponentWrapper">
+          Input
+          <div class="plusIcon">+</div>
+        </div>
+        <div onclick="addElement('Select')" class="formComponentWrapper">
+          Select
+          <div class="plusIcon">+</div>
+        </div>
+        <div onclick="addElement('Textarea')" class="formComponentWrapper">
+          Textarea
+          <div class="plusIcon">+</div>
+        </div>
+      </div>
+
+      <div id="formContainer">
+        <!-- Form elements will be dynamically added here -->
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
