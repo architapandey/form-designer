@@ -116,7 +116,7 @@ function getDefaultOptions(type) {
 }
 
 function deleteElement(element) {
-  const elementId = element.getAttribute("data-id");
+  const elementId = Number(element.getAttribute("data-id"));
   const elementIndex = formData.findIndex((data) => data.id === elementId);
 
   if (elementIndex !== -1) {
